@@ -20,11 +20,11 @@ The **Image Gallery Project** is a web-based application that allows users to **
 ## 📸 Screenshots
 | Home Page | Reg Page | Login Page | view Gallery |
 |-----------|---------|------------|-----------|
-| ![Home](Home.png) | ![Reg](Add.png) | ![Login](Show.png) | ![Gallery](Edit.png) |
+| ![Home](Home.png) | ![Reg](Reg.png) | ![Login](Login.png) | ![Gallery](Gallery.png) |
 
 | view Gallery | Update Profile | Gallery Page | Upload Image |
 |------------|-------------|-------------|-------------|
-| ![Gallery](Delete.png) | ![Profile](Profile.png) | ![Gallery](Gallery.png) | ![Upload](Upload.png) |
+| ![Gallery](Pages.png) | ![Profile](Update.png) | ![Gallery](Gallery.png) | ![Upload](Upload.png) |
 
 
 ## 📂 Project Structure
