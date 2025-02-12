@@ -79,6 +79,16 @@ CREATE TABLE images (
 |-----------|---------|------------|-----------|
 | ![Home](Home.png) | ![Add](Add.png) | ![Show](Show.png) | ![Edit](Edit.png) |
 
+
+## 📸 Screenshots
+| Home Page | Reg Page | Login Page | view Gallery |
+|-----------|---------|------------|-----------|
+| ![Home](Home.png) | ![Reg](Add.png) | ![Login](Show.png) | ![Gallery](Edit.png) |
+
+| view Gallery | Update Profile | Gallery Page | Upload Image |
+|------------|-------------|-------------|-------------|
+| ![Gallery](Delete.png) | ![Profile](Profile.png) | ![Gallery](Gallery.png) | ![Upload](Upload.png) |
+
 ## 👨‍💻 Contributing
 Feel free to **fork** this repository, create a new branch, and submit a PR. Contributions are always welcome!  
 
