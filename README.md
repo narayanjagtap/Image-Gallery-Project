@@ -22,9 +22,9 @@ The **Image Gallery Project** is a web-based application that allows users to **
 |-----------|---------|------------|-----------|
 | ![Home](Home.png) | ![Reg](Reg.png) | ![Login](Login.png) | ![Gallery](Gallery.png) |
 
-| view Gallery | Update Profile | Gallery Page | Upload Image |
-|------------|-------------|-------------|-------------|
-| ![Gallery](Pages.png) | ![Profile](Update.png) | ![Gallery](Gallery.png) | ![Upload](Upload.png) |
+| view Gallery | Update Profile | Upload Image |
+|------------|-------------|-------------|
+| ![Gallery](Pages.png) | ![Profile](Update.png) | ![Upload](Upload.png) |
 
 
 ## 📂 Project Structure
