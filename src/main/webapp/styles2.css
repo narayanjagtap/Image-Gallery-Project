@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000000;
+    margin-top: 100px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: 5px auto;
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid #ccc; /* Thin border with light gray color */
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6598f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #3366cc;
+}
+
+p {
+    margin-top: 10px;
+}
+p a{
+	font-weight: bold;
+}
+
+.a1 {
+    width: 10%;
+    padding: 10px;
+    background-color: #6598f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures button-like appearance */
+    text-align: center;
+}
+
+.a1:hover {
+    background-color: #3366cc;
+}

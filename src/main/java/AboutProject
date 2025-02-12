@@ -1,0 +1,145 @@
+**summary of all the important information** about your **Image Gallery Project**:
+
+---
+
+## **📌 Project Overview**
+Your project is a **web-based image gallery** where users can:
+✔️ Register and log in  
+✔️ Upload images with descriptions  
+✔️ View all uploaded images  
+✔️ Delete images  
+✔️ Update their profile  
+
+The project is built using **Java (Servlets, JSP), MySQL, and Apache Tomcat**.
+
+---
+
+## **📂 Project Structure**
+```
+ImageGalleryProject
+│
+├── src (Java Source Code)
+│   └── com.example
+│       ├── dao (Data Access Layer)
+│       │   ├── ImageDAO.java
+│       │   ├── UserDAO.java
+│       ├── model (Java Beans)
+│       │   ├── Image.java
+│       │   ├── User.java
+│       ├── servlet (Controllers)
+│       │   ├── ImageUploadServlet.java
+│       │   ├── ImageDisplayServlet.java
+│       │   ├── DeleteImageServlet.java
+│       │   ├── LoginServlet.java
+│       │   ├── RegisterServlet.java
+│       │   ├── LogoutServlet.java
+│       │   ├── UpdateProfileServlet.java
+│
+├── WebContent (Frontend & Configs)
+│   ├── index.html (Home Page)
+│   ├── login.jsp (User Login)
+│   ├── register.jsp (User Registration)
+│   ├── upload.jsp (Image Upload Form)
+│   ├── gallery.jsp (Image Gallery View)
+│   ├── updateProfile.jsp (User Profile Update)
+│   ├── css/styles.css (Styling)
+│   ├── WEB-INF/web.xml (Configuration)
+│
+└── lib (Dependencies)
+    └── mysql-connector-java-x.x.x.jar
+```
+
+---
+
+## **🛠️ Technologies Used**
+✅ **Frontend**: HTML, CSS, JSP  
+✅ **Backend**: Java Servlets  
+✅ **Database**: MySQL  
+✅ **Web Server**: Apache Tomcat  
+✅ **JDBC**: For database connectivity  
+
+---
+
+## **🛢️ Database Setup**
+- **Database Name**: `image_gallery`
+- **Tables**:
+  1. `users` (Stores user credentials)
+  2. `images` (Stores uploaded images)
+
+### **SQL Queries**
+```sql
+CREATE DATABASE image_gallery;
+USE image_gallery;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    file_path VARCHAR(255) NOT NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+---
+
+## **🔑 Core Functionalities**
+### **1️⃣ User Authentication**
+- **RegisterServlet** → Registers a new user  
+- **LoginServlet** → Handles user login  
+- **LogoutServlet** → Logs the user out  
+- **UpdateProfileServlet** → Updates user details  
+
+### **2️⃣ Image Management**
+- **ImageUploadServlet** → Handles image uploads  
+- **ImageDisplayServlet** → Displays images with pagination  
+- **DeleteImageServlet** → Deletes selected images  
+
+---
+
+## **📂 DAO (Database Access)**
+- **UserDAO**: Handles user authentication & registration  
+- **ImageDAO**: Manages image insert, delete, and retrieval  
+
+Example **ImageDAO.java** Method:
+```java
+public List<Image> selectAllImages() {
+    List<Image> images = new ArrayList<>();
+    try (Connection connection = getConnection();
+         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM images")) {
+        ResultSet rs = preparedStatement.executeQuery();
+        while (rs.next()) {
+            images.add(new Image(rs.getInt("id"), rs.getString("name"), rs.getString("description"), rs.getString("file_path")));
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+    return images;
+}
+```
+
+---
+
+## **🖼️ JSP Pages**
+- `index.html` → Home Page  
+- `login.jsp` → Login Form  
+- `register.jsp` → Registration Form  
+- `gallery.jsp` → Displays images with **pagination**  
+- `upload.jsp` → Upload new images  
+- `updateProfile.jsp` → Update user profile   
+
+---
+
+## **🚀 How to Run the Project**
+1️⃣ Install MySQL and create the database  
+2️⃣ Configure `mysql-connector-java.jar` in the `lib` folder  
+3️⃣ Deploy the project on **Apache Tomcat**  
+4️⃣ Access via `http://localhost:8080/ImageGalleryProject`  
+
+---
+
