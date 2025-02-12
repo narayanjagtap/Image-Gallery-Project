@@ -1,7 +1,13 @@
 # 📷 Image Gallery Project
 
 ## 🚀 Overview
-The **Image Gallery Project** is a web-based application that allows users to **upload, view, and manage** images securely. Built using **Java, JSP, Servlets, JDBC and MySQL**, it provides features like **user authentication, image pagination, and profile management**. Additionally, users can **register for an account, log in securely, and manage their credentials** to ensure a personalized experience.
+The **Image Gallery Project** is a web-based application that allows users to **upload, view, and manage** images securely. Built using **Java, JSP, Servlets, JDBC and MySQL**, it provides features like **user authentication, image pagination, and profile management**. Additionally, users can **register for an account, log in securely, and manage their credentials** to ensure a personalized experience. <br><br>
+**Image Gallery Project** is structured in a **MVC (Model-View-Controller) format**, where:  
+✔ **Model (Data Layer)** → Defines data objects.  
+✔ **DAO (Database Layer)** → Handles database operations.  
+✔ **Servlets (Controller Layer)** → Manages business logic.  
+✔ **JSP/HTML (View Layer)** → Displays the UI to the user. 
+
 ## 🎯 Features
 ✅ **User Authentication** - Secure login and registration using MySQL.  
 ✅ **Image Upload & Storage** - Users can upload images with descriptions.  
